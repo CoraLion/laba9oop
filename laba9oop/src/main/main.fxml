@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="500.0">
+         <TextField fx:id="aField" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="53.0" />
+         <TextField fx:id="bField" layoutX="79.0" layoutY="14.0" prefHeight="26.0" prefWidth="53.0" />
+         <Button fx:id="calsum" layoutX="222.0" layoutY="14.0" mnemonicParsing="false" onAction="#calsum" text="Начать" />
+         <Label fx:id="countf" layoutX="18.0" layoutY="52.0" prefHeight="18.0" prefWidth="124.0" text="1" />
+         <TextField fx:id="cField" layoutX="143.0" layoutY="14.0" prefHeight="26.0" prefWidth="59.0" />
+         <Label fx:id="maxmin" layoutX="18.0" layoutY="71.0" prefHeight="18.0" prefWidth="469.0" text="2" />
+         <Label fx:id="sum" layoutX="19.0" layoutY="89.0" prefHeight="18.0" prefWidth="272.0" text="3" />
+         <Label fx:id="arsum" layoutX="19.0" layoutY="107.0" prefHeight="18.0" prefWidth="140.0" text="4" />
+        </AnchorPane>
+    </center>
+   <top>
+       <VBox prefHeight="28.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+           <MenuBar>
+               <Menu mnemonicParsing="false" text="File">
+                   <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+               </Menu>
+               <Menu mnemonicParsing="false" text="Edit">
+                   <MenuItem mnemonicParsing="false" text="Delete" />
+               </Menu>
+               <Menu mnemonicParsing="false" text="Help">
+                   <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+               </Menu>
+           </MenuBar>
+       </VBox>
+   </top>
+</BorderPane>
